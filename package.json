@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.0",
     "autoprefixer": "10.4.14",
     "next": "13.4.13",
     "postcss": "8.4.27",
